@@ -7,7 +7,16 @@ By considering the terms in the Fibonacci sequence whose values do not exceed , 
 
 """
 
-def solution(n):
+
+def solution(n: int):
+    """
+    pass integer and loop while keep buffer(last one before) and current and keep updating
+    the value of current fibonacci = current + buffer which current = fibonacci and buffer = current
+    :param n: input
+    :type n: int
+    :return: sum of value that's even and not over n
+    :rtype: int
+    """
     if n < 2:
         return 0
     buffer = 1
